@@ -1,0 +1,25 @@
+<idea-plugin require-restart="true">
+  <id>astviewer-rider</id>
+  <name>ASTViewer</name>
+  <version>0.0.0.1</version>
+  <vendor url="https://project-url">Author</vendor>
+  <idea-version since-build="2020.1" until-build="2021.1" />
+  <depends>com.intellij.modules.rider</depends>
+
+  <description>
+<![CDATA[
+<p>Sample description...........................................................</p>
+]]>
+  </description>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationConfigurable groupId="language" instance="com.jetbrains.rider.plugins.astviewer.SampleOptionsPage" id="SampleOptionsPage" />
+  </extensions>
+
+  <actions>
+    <action id="SampleAction" class="com.jetbrains.rider.plugins.astviewer.SampleAction"
+            text="Do Something" description="Do Something Description">
+    </action>
+  </actions>
+  
+</idea-plugin>
